@@ -107,7 +107,7 @@ export function AboutSection() {
                   <Users className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h3 className="font-anton text-xl font-normal mb-3">PARCERIA</h3>
                   <p className="font-lato text-muted-foreground leading-relaxed">
-                    Nosso compromisso é com sua satisfação e o sucesso do seu projeto.
+                    Nosso compromisso é entregar agilidade, qualidade e resultados concretos que superem suas expectativas.
                   </p>
                 </CardContent>
               </Card>
