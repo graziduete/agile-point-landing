@@ -25,23 +25,23 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/logo-black.png", sizes: "192x192", type: "image/png" },
+      { url: "/images/logo-white.png", sizes: "192x192", type: "image/png" },
     ],
     apple: [
-      { url: "/images/logo-black.png", sizes: "180x180", type: "image/png" },
+      { url: "/images/logo-white.png", sizes: "180x180", type: "image/png" },
     ],
   },
   openGraph: {
     title: "Agile Point - Transformando Visão em Realidade Digital",
     description: "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
-    images: ["/images/logo-black.png"],
+    images: ["/images/logo-white.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Agile Point - Transformando Visão em Realidade Digital",
     description: "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
-    images: ["/images/logo-black.png"],
+    images: ["/images/logo-white.png"],
   },
 }
 
@@ -55,7 +55,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/images/logo-black.png" />
+        <link rel="apple-touch-icon" href="/images/logo-white.png" />
       </head>
       <body className={`font-lato ${anton.variable} ${lato.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
