@@ -30,7 +30,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="font-anton text-4xl sm:text-5xl lg:text-7xl font-normal mb-6 text-balance leading-tight">
-            {"TRANSFORMAMOS SUA VISÃO EM "}
+            {"TRANSFORMAMOS DESAFIOS EM "}
             <span className="text-primary">REALIDADE DIGITAL</span>
           </h1>
 

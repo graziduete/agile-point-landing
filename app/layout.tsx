@@ -18,7 +18,7 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "Agile Point - Transformando Visão em Realidade Digital",
+  title: "Agile Point - Transformando Desafios em Realidade Digital",
   description:
     "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
   generator: "v0.app",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Agile Point - Transformando Visão em Realidade Digital",
+    title: "Agile Point - Transformando Desafios em Realidade Digital",
     description: "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
     images: ["/images/logo-white.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agile Point - Transformando Visão em Realidade Digital",
+    title: "Agile Point - Transformando Desafios em Realidade Digital",
     description: "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
     images: ["/images/logo-white.png"],
   },
