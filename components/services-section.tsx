@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Globe, Cog, Code2, ArrowRight } from "lucide-react"
+import { Globe, Cog, Code2, Lightbulb, ArrowRight } from "lucide-react"
 
 export function ServicesSection() {
   const services = [
@@ -26,6 +26,13 @@ export function ServicesSection() {
       description:
         "Construímos soluções sob medida que se adaptam perfeitamente às suas necessidades, garantindo escalabilidade e eficiência.",
       features: ["Python Development", "APIs Robustas", "Integração de Dados", "Arquitetura Escalável"],
+    },
+    {
+      icon: Lightbulb,
+      title: "Consultoria em Tecnologia",
+      description:
+        "Orientamos sua empresa na escolha das melhores tecnologias e estratégias digitais, maximizando resultados e minimizando riscos.",
+      features: ["Análise de Arquitetura", "Roadmap Tecnológico", "Auditoria de Sistemas", "Estratégia Digital"],
     },
   ]
 
