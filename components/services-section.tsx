@@ -31,8 +31,8 @@ export function ServicesSection() {
       icon: Lightbulb,
       title: "Consultoria em Tecnologia",
       description:
-        "Orientamos sua empresa na escolha das melhores tecnologias e estratégias digitais, maximizando resultados e minimizando riscos.",
-      features: ["Análise de Arquitetura", "Roadmap Tecnológico", "Auditoria de Sistemas", "Estratégia Digital"],
+        "Orientação estratégica para transformação digital e otimização de processos.",
+      features: ["Análise de Arquitetura", "Roadmap Tecnológico", "Diagnósticos de Processos", "Estratégia Digital"],
     },
   ]
 
@@ -57,7 +57,7 @@ export function ServicesSection() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             {services.map((service, index) => {
               const IconComponent = service.icon
               return (
