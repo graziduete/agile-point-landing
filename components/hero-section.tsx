@@ -14,7 +14,7 @@ export function HeroSection() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden pt-20"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('/abstract-tech-pattern.png')] opacity-5"></div>
