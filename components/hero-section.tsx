@@ -35,8 +35,7 @@ export function HeroSection() {
           </h1>
 
           <p className="font-lato text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
-            Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus
-            processos e resultados que impulsionam seu crescimento.
+            Criamos soluções inteligentes que simplificam processos, ampliam resultados e aceleram o crescimento do seu negócio.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
