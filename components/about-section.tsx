@@ -65,6 +65,18 @@ export function AboutSection() {
                       </span>
                     </div>
                   </div>
+
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <strong className="font-lato font-bold">Consultoria em Tecnologia:</strong>
+                      <span className="font-lato text-muted-foreground">
+                        {" "}
+                        Orientamos sua empresa na escolha das melhores tecnologias e estratégias digitais, maximizando
+                        resultados e minimizando riscos.
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
