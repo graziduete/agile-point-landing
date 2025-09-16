@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Code, Zap, Target } from "lucide-react"
+import { AnimatedCounter } from "@/components/animated-counter"
 
 export function HeroSection() {
   const scrollToContact = () => {
@@ -59,15 +60,30 @@ export function HeroSection() {
 
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-anton text-primary mb-2">17+</div>
+              <AnimatedCounter 
+                end={17} 
+                suffix="+" 
+                duration={2500}
+                className="text-3xl font-anton text-primary mb-2"
+              />
               <div className="text-sm font-lato text-muted-foreground">Anos de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-anton text-primary mb-2">100+</div>
+              <AnimatedCounter 
+                end={100} 
+                suffix="+" 
+                duration={2000}
+                className="text-3xl font-anton text-primary mb-2"
+              />
               <div className="text-sm font-lato text-muted-foreground">Projetos Entregues</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-anton text-primary mb-2">100%</div>
+              <AnimatedCounter 
+                end={100} 
+                suffix="%" 
+                duration={1800}
+                className="text-3xl font-anton text-primary mb-2"
+              />
               <div className="text-sm font-lato text-muted-foreground">Satisfação do Cliente</div>
             </div>
           </div>
