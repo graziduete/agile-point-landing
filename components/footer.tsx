@@ -11,8 +11,7 @@ export function Footer() {
             <div className="space-y-4">
               <Image src="/images/logo-white.png" alt="Agile Point" width={150} height={50} className="h-10 w-auto" />
               <p className="font-lato text-sm opacity-90 leading-relaxed">
-                Transformamos seus desafios em realidade digital com mais de 17 anos de experiência em soluções tecnológicas
-                inovadoras.
+                Transformamos seus desafios em realidade digital.
               </p>
             </div>
 
