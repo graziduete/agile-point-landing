@@ -22,6 +22,27 @@ export const metadata: Metadata = {
   description:
     "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
   generator: "v0.app",
+  icons: {
+    icon: [
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/logo-black.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/logo-black.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  openGraph: {
+    title: "Agile Point - Transformando Visão em Realidade Digital",
+    description: "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
+    images: ["/images/logo-black.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Agile Point - Transformando Visão em Realidade Digital",
+    description: "Com mais de 17 anos de experiência, desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados.",
+    images: ["/images/logo-black.png"],
+  },
 }
 
 export default function RootLayout({
