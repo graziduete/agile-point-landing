@@ -116,8 +116,7 @@ export function AboutSection() {
 
           <div className="mt-16 text-center">
             <p className="font-lato text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Nosso compromisso é com a sua satisfação e o sucesso do seu projeto. Entregamos soluções com agilidade e
-              qualidade, garantindo resultados que superam suas expectativas.
+              Somos movidos pela inovação, excelência e parceria. Cada projeto é uma oportunidade de criar algo extraordinário que impulsione seu crescimento.
             </p>
           </div>
         </div>
