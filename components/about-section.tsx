@@ -14,7 +14,7 @@ export function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="font-lato text-lg leading-relaxed text-muted-foreground mb-6">
-                Na Agile Point, transformamos sua visão em realidade digital. Com mais de 17 anos de experiência, nossa
+                Na Agile Point, transformamos seus desafios em realidade digital. Com mais de 17 anos de experiência, nossa
                 missão é clara: simplificar o complexo.
               </p>
 
