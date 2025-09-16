@@ -52,6 +52,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo-black.png" />
+      </head>
       <body className={`font-lato ${anton.variable} ${lato.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
