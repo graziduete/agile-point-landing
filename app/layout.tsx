@@ -97,6 +97,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/logo-white.png" />
+        <meta name="google-site-verification" content="AlKeIuCG-vwGOG4EfQya9PbJ_4or0xNcDO06Voe8r1A" />
         <SchemaMarkup />
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
