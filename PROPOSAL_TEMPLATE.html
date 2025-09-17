@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Agile Point</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            padding: 60px;
+            position: relative;
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 4rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .slide h2 {
+            font-family: 'Anton', sans-serif;
+            font-size: 3rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .slide h3 {
+            font-family: 'Anton', sans-serif;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .slide h4 {
+            font-family: 'Anton', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .slide p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 2rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .primary {
+            color: #fff;
+        }
+
+        .accent {
+            color: #666;
+        }
+
+        .highlight {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem 0;
+        }
+
+        .case-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .case-item h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .case-item p {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        .scope-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 800px;
+            margin: 2rem 0;
+        }
+
+        .scope-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .scope-item h4 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 2rem 0;
+        }
+
+        .tech-category {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .tech-category h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .tech-list {
+            list-style: none;
+            text-align: left;
+        }
+
+        .tech-list li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tech-list li:last-child {
+            border-bottom: none;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem 0;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .team-member h4 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member .role {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .budget-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem 0;
+            border-collapse: collapse;
+        }
+
+        .budget-table th,
+        .budget-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .budget-table th {
+            background: rgba(255, 255, 255, 0.1);
+            font-family: 'Anton', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .budget-table .total {
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #fff;
+            z-index: 1;
+        }
+
+        .timeline-item {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .timeline-dot {
+            width: 60px;
+            height: 60px;
+            background: #000;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Anton', sans-serif;
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+        }
+
+        .timeline-content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .timeline-content h4 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content .duration {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .payment-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .payment-info h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .payment-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .payment-info li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .payment-info li:last-child {
+            border-bottom: none;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn.active {
+            background: #fff;
+        }
+
+        .slide-counter {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 1rem;
+            color: #666;
+            z-index: 1000;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .client-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .client-info h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .client-info p {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 30px;
+            }
+            
+            .slide h1 {
+                font-size: 2.5rem;
+            }
+            
+            .slide h2 {
+                font-size: 2rem;
+            }
+            
+            .case-grid,
+            .scope-list,
+            .tech-stack,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .timeline::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">10</span>
+    </div>
+
+    <!-- Slide 1: Capa -->
+    <div class="slide active fade-in">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMjAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjRkZGRkZGIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDAwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFHSURFIFBPSU5UPC90ZXh0Pgo8L3N2Zz4K" alt="Agile Point" class="logo">
+        <h1 class="primary">PROPOSTA COMERCIAL</h1>
+        <p class="accent">Desenvolvimento de Solução Digital</p>
+        <div class="client-info">
+            <h4>Cliente: [NOME DO CLIENTE]</h4>
+            <p><strong>Projeto:</strong> [NOME DO PROJETO]</p>
+            <p><strong>Data:</strong> [DATA DA PROPOSTA]</p>
+            <p><strong>Validade:</strong> 30 dias</p>
+        </div>
+    </div>
+
+    <!-- Slide 2: Case de Sucesso -->
+    <div class="slide">
+        <h2 class="primary">CASE DE SUCESSO</h2>
+        <div class="case-grid">
+            <div class="case-item">
+                <h4>Projeto Anterior</h4>
+                <p><strong>Cliente:</strong> [NOME DO CLIENTE ANTERIOR]</p>
+                <p><strong>Desafio:</strong> [DESCRIÇÃO DO DESAFIO]</p>
+                <p><strong>Solução:</strong> [SOLUÇÃO IMPLEMENTADA]</p>
+                <p><strong>Resultado:</strong> [RESULTADOS ALCANÇADOS]</p>
+            </div>
+            <div class="case-item">
+                <h4>Métricas de Sucesso</h4>
+                <p><strong>Redução de Tempo:</strong> 85%</p>
+                <p><strong>Economia de Custos:</strong> 60%</p>
+                <p><strong>Satisfação do Cliente:</strong> 100%</p>
+                <p><strong>ROI:</strong> 300% em 6 meses</p>
+            </div>
+        </div>
+        <p>Nossa experiência comprovada garante resultados excepcionais para seu projeto.</p>
+    </div>
+
+    <!-- Slide 3: Escopo do Projeto -->
+    <div class="slide">
+        <h2 class="primary">ESCOPO DO PROJETO</h2>
+        <div class="scope-list">
+            <div class="scope-item">
+                <h4>Desenvolvimento Web</h4>
+                <p>Interface responsiva e moderna</p>
+                <p>Sistema de gerenciamento</p>
+                <p>Integração com APIs</p>
+            </div>
+            <div class="scope-item">
+                <h4>Funcionalidades</h4>
+                <p>Autenticação de usuários</p>
+                <p>Dashboard administrativo</p>
+                <p>Relatórios e analytics</p>
+            </div>
+            <div class="scope-item">
+                <h4>Integrações</h4>
+                <p>Pagamentos online</p>
+                <p>E-mail marketing</p>
+                <p>Redes sociais</p>
+            </div>
+            <div class="scope-item">
+                <h4>Suporte</h4>
+                <p>Treinamento da equipe</p>
+                <p>Documentação técnica</p>
+                <p>Suporte pós-entrega</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Stack Tecnológica -->
+    <div class="slide">
+        <h2 class="primary">STACK TECNOLÓGICA</h2>
+        <div class="tech-stack">
+            <div class="tech-category">
+                <h4>Frontend</h4>
+                <ul class="tech-list">
+                    <li>React.js</li>
+                    <li>Next.js</li>
+                    <li>TypeScript</li>
+                    <li>Tailwind CSS</li>
+                    <li>Framer Motion</li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <h4>Backend</h4>
+                <ul class="tech-list">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>JWT Auth</li>
+                </ul>
+            </div>
+            <div class="tech-category">
+                <h4>DevOps</h4>
+                <ul class="tech-list">
+                    <li>Docker</li>
+                    <li>AWS/GCP</li>
+                    <li>CI/CD</li>
+                    <li>Monitoring</li>
+                    <li>Backup</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Requisitos Técnicos -->
+    <div class="slide">
+        <h2 class="primary">REQUISITOS TÉCNICOS</h2>
+        <div class="case-grid">
+            <div class="case-item">
+                <h4>Performance</h4>
+                <p>• Tempo de carregamento < 3s</p>
+                <p>• Suporte a 1000+ usuários simultâneos</p>
+                <p>• 99.9% de uptime</p>
+                <p>• Otimização para mobile</p>
+            </div>
+            <div class="case-item">
+                <h4>Segurança</h4>
+                <p>• HTTPS obrigatório</p>
+                <p>• Criptografia de dados</p>
+                <p>• Backup automático</p>
+                <p>• Monitoramento 24/7</p>
+            </div>
+            <div class="case-item">
+                <h4>Compatibilidade</h4>
+                <p>• Chrome, Firefox, Safari</p>
+                <p>• iOS e Android</p>
+                <p>• Responsive design</p>
+                <p>• Acessibilidade WCAG</p>
+            </div>
+            <div class="case-item">
+                <h4>Escalabilidade</h4>
+                <p>• Arquitetura modular</p>
+                <p>• Microserviços</p>
+                <p>• Auto-scaling</p>
+                <p>• Load balancing</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Estilização e Componentes -->
+    <div class="slide">
+        <h2 class="primary">ESTILIZAÇÃO E COMPONENTES</h2>
+        <div class="scope-list">
+            <div class="scope-item">
+                <h4>Design System</h4>
+                <p>Paleta de cores personalizada</p>
+                <p>Tipografia consistente</p>
+                <p>Componentes reutilizáveis</p>
+                <p>Guia de estilo completo</p>
+            </div>
+            <div class="scope-item">
+                <h4>Interface</h4>
+                <p>Layout responsivo</p>
+                <p>Animações suaves</p>
+                <p>UX otimizada</p>
+                <p>Feedback visual</p>
+            </div>
+            <div class="scope-item">
+                <h4>Componentes</h4>
+                <p>Formulários inteligentes</p>
+                <p>Dashboards interativos</p>
+                <p>Grafos e relatórios</p>
+                <p>Notificações em tempo real</p>
+            </div>
+            <div class="scope-item">
+                <h4>Personalização</h4>
+                <p>Logo e identidade visual</p>
+                <p>Cores da marca</p>
+                <p>Conteúdo personalizado</p>
+                <p>Integração com branding</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Hospedagem e Banco de Dados -->
+    <div class="slide">
+        <h2 class="primary">HOSPEDAGEM E BANCO DE DADOS</h2>
+        <div class="case-grid">
+            <div class="case-item">
+                <h4>Infraestrutura</h4>
+                <p><strong>Servidor:</strong> AWS/GCP</p>
+                <p><strong>Região:</strong> São Paulo</p>
+                <p><strong>SSL:</strong> Certificado gratuito</p>
+                <p><strong>CDN:</strong> CloudFlare</p>
+            </div>
+            <div class="case-item">
+                <h4>Banco de Dados</h4>
+                <p><strong>Tipo:</strong> PostgreSQL</p>
+                <p><strong>Backup:</strong> Diário automático</p>
+                <p><strong>Escalabilidade:</strong> Horizontal</p>
+                <p><strong>Monitoramento:</strong> 24/7</p>
+            </div>
+            <div class="case-item">
+                <h4>Segurança</h4>
+                <p><strong>Firewall:</strong> Configurado</p>
+                <p><strong>DDoS:</strong> Proteção ativa</p>
+                <p><strong>Backup:</strong> 30 dias retenção</p>
+                <p><strong>Logs:</strong> Auditoria completa</p>
+            </div>
+            <div class="case-item">
+                <h4>Manutenção</h4>
+                <p><strong>Updates:</strong> Automáticos</p>
+                <p><strong>Monitoramento:</strong> Uptime 99.9%</p>
+                <p><strong>Suporte:</strong> 24/7</p>
+                <p><strong>Escalabilidade:</strong> On-demand</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: Nosso Time -->
+    <div class="slide">
+        <h2 class="primary">NOSSO TIME</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>João Silva</h4>
+                <div class="role">Tech Lead</div>
+                <p>15+ anos de experiência em desenvolvimento full-stack e arquitetura de sistemas.</p>
+            </div>
+            <div class="team-member">
+                <h4>Maria Santos</h4>
+                <div class="role">UX/UI Designer</div>
+                <p>Especialista em design de interfaces e experiência do usuário.</p>
+            </div>
+            <div class="team-member">
+                <h4>Pedro Costa</h4>
+                <div class="role">DevOps Engineer</div>
+                <p>Expert em infraestrutura cloud e automação de processos.</p>
+            </div>
+        </div>
+        <p>Equipe multidisciplinar com mais de 50 anos de experiência combinada em tecnologia.</p>
+    </div>
+
+    <!-- Slide 9: Cronograma -->
+    <div class="slide">
+        <h2 class="primary">CRONOGRAMA MACRO</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot">1</div>
+                <div class="timeline-content">
+                    <h4>Análise e Planejamento</h4>
+                    <div class="duration">Semana 1-2</div>
+                    <p>Levantamento de requisitos e arquitetura</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot">2</div>
+                <div class="timeline-content">
+                    <h4>Desenvolvimento</h4>
+                    <div class="duration">Semana 3-8</div>
+                    <p>Implementação das funcionalidades</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot">3</div>
+                <div class="timeline-content">
+                    <h4>Testes e Ajustes</h4>
+                    <div class="duration">Semana 9-10</div>
+                    <p>Validação e refinamentos</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot">4</div>
+                <div class="timeline-content">
+                    <h4>Deploy e Entrega</h4>
+                    <div class="duration">Semana 11-12</div>
+                    <p>Go-live e treinamento</p>
+                </div>
+            </div>
+        </div>
+        <p><strong>Prazo Total:</strong> 12 semanas | <strong>Entrega:</strong> [DATA DE ENTREGA]</p>
+    </div>
+
+    <!-- Slide 10: Orçamento e Pagamento -->
+    <div class="slide">
+        <h2 class="primary">ORÇAMENTO E PAGAMENTO</h2>
+        <table class="budget-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Desenvolvimento</td>
+                    <td>Frontend + Backend + Integrações</td>
+                    <td>R$ [VALOR]</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>UI/UX + Design System</td>
+                    <td>R$ [VALOR]</td>
+                </tr>
+                <tr>
+                    <td>Infraestrutura</td>
+                    <td>Hospedagem + Banco + SSL</td>
+                    <td>R$ [VALOR]</td>
+                </tr>
+                <tr>
+                    <td>Suporte</td>
+                    <td>3 meses pós-entrega</td>
+                    <td>R$ [VALOR]</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="2"><strong>TOTAL</strong></td>
+                    <td><strong>R$ [VALOR TOTAL]</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="payment-info">
+            <h4>Condições de Pagamento</h4>
+            <ul>
+                <li><strong>30%</strong> na assinatura do contrato</li>
+                <li><strong>40%</strong> na entrega do MVP</li>
+                <li><strong>30%</strong> na entrega final</li>
+            </ul>
+            <p><strong>Formas de Pagamento:</strong> PIX, Transferência, Boleto</p>
+            <p><strong>Validade da Proposta:</strong> 30 dias</p>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn active" onclick="showSlide(0)"></button>
+        <button class="nav-btn" onclick="showSlide(1)"></button>
+        <button class="nav-btn" onclick="showSlide(2)"></button>
+        <button class="nav-btn" onclick="showSlide(3)"></button>
+        <button class="nav-btn" onclick="showSlide(4)"></button>
+        <button class="nav-btn" onclick="showSlide(5)"></button>
+        <button class="nav-btn" onclick="showSlide(6)"></button>
+        <button class="nav-btn" onclick="showSlide(7)"></button>
+        <button class="nav-btn" onclick="showSlide(8)"></button>
+        <button class="nav-btn" onclick="showSlide(9)"></button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const totalSlides = slides.length;
+
+        document.getElementById('total-slides').textContent = totalSlides;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            navButtons[currentSlide].classList.remove('active');
+            
+            currentSlide = n;
+            
+            slides[currentSlide].classList.add('active');
+            navButtons[currentSlide].classList.add('active');
+            
+            document.getElementById('current-slide').textContent = currentSlide + 1;
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % totalSlides;
+            showSlide(next);
+        }
+
+        function prevSlide() {
+            const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(prev);
+        }
+
+        // Navegação por teclado
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        // Navegação por clique
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('slide') && !e.target.classList.contains('case-item') && !e.target.classList.contains('scope-item') && !e.target.classList.contains('tech-category') && !e.target.classList.contains('team-member') && !e.target.classList.contains('timeline-content') && !e.target.classList.contains('payment-info') && !e.target.classList.contains('client-info')) {
+                nextSlide();
+            }
+        });
+    </script>
+</body>
+</html>

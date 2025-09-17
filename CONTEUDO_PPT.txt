@@ -1,0 +1,208 @@
+AGILE POINT - PROPOSTA COMERCIAL
+=====================================
+
+SLIDE 1 - CAPA
+===============
+Título: AGILE POINT
+Subtítulo: Transformamos Desafios em Realidade Digital
+Descrição: Proposta Comercial
+Data: [Data atual]
+
+SLIDE 2 - QUEM SOMOS
+====================
+Título: QUEM SOMOS
+
+Na Agile Point, transformamos seus desafios em realidade digital. Com mais de 17 anos de experiência, nossa missão é clara: simplificar o complexo.
+
+Desenvolvemos soluções inteligentes e eficientes que otimizam seus processos e resultados que impulsionam seu crescimento.
+
+Mais agilidade, produtividade e sucesso para a sua empresa.
+
+SLIDE 3 - NOSSOS SERVIÇOS
+=========================
+Título: NOSSOS SERVIÇOS
+
+• Soluções Web e Mobile
+  Criamos experiências digitais modernas e intuitivas que engajam seus clientes e expandem seu alcance no mercado.
+
+• Automação de Processos (RPA)
+  Automatizamos tarefas repetitivas, liberando sua equipe para focar em atividades estratégicas e reduzindo custos operacionais.
+
+• Desenvolvimento Customizado
+  Construímos soluções sob medida que se adaptam perfeitamente às suas necessidades, garantindo escalabilidade e eficiência.
+
+• Consultoria em Tecnologia
+  Orientação estratégica para transformação digital e otimização de processos.
+
+SLIDE 4 - CASES DE SUCESSO
+==========================
+Título: CASES DE SUCESSO
+
+[Adicione aqui casos reais da sua empresa]
+
+Exemplo:
+• Empresa X - Sistema de Gestão
+  Redução de 60% no tempo de processos
+  ROI de 300% em 6 meses
+
+• Empresa Y - Automação RPA
+  Economia de 40 horas/semana
+  Eliminação de erros manuais
+
+SLIDE 5 - ESCOPO DO PROJETO
+===========================
+Título: ESCOPO DO PROJETO
+
+[Defina aqui o escopo específico para cada cliente]
+
+Exemplo:
+• Análise de Requisitos
+• Desenvolvimento da Solução
+• Testes e Validação
+• Implementação
+• Treinamento da Equipe
+• Suporte Pós-Implementação
+
+SLIDE 6 - STACK TECNOLÓGICA
+===========================
+Título: STACK TECNOLÓGICA
+
+Frontend:
+• React.js / Next.js
+• TypeScript
+• Tailwind CSS
+
+Backend:
+• Python / Node.js
+• APIs RESTful
+• Banco de Dados
+
+Ferramentas:
+• Git / GitHub
+• Docker
+• CI/CD
+
+SLIDE 7 - REQUISITOS TÉCNICOS
+=============================
+Título: REQUISITOS TÉCNICOS
+
+Servidor:
+• Mínimo 4GB RAM
+• 50GB de armazenamento
+• SSL Certificate
+
+Domínio:
+• Registro de domínio
+• Configuração DNS
+
+Backup:
+• Backup automático diário
+• Restore em caso de falhas
+
+SLIDE 8 - ESTILIZAÇÃO E COMPONENTES
+===================================
+Título: ESTILIZAÇÃO E COMPONENTES
+
+Design System:
+• Paleta de cores personalizada
+• Tipografia (Anton + Lato)
+• Componentes reutilizáveis
+
+Responsividade:
+• Mobile First
+• Tablet e Desktop
+• Cross-browser compatibility
+
+Acessibilidade:
+• WCAG 2.1 AA
+• Navegação por teclado
+• Screen readers
+
+SLIDE 9 - HOSPEDAGEM E BANCO DE DADOS
+=====================================
+Título: HOSPEDAGEM E BANCO DE DADOS
+
+Hospedagem:
+• Vercel / AWS / Google Cloud
+• CDN global
+• SSL automático
+
+Banco de Dados:
+• PostgreSQL / MongoDB
+• Backup automático
+• Monitoramento 24/7
+
+Segurança:
+• Firewall configurado
+• Criptografia de dados
+• Logs de auditoria
+
+SLIDE 10 - EQUIPE E TIMELINE
+============================
+Título: EQUIPE E TIMELINE
+
+Equipe:
+• 1 Project Manager
+• 2 Desenvolvedores
+• 1 Designer UX/UI
+• 1 QA Tester
+
+Timeline:
+• Semana 1-2: Análise e Planejamento
+• Semana 3-6: Desenvolvimento
+• Semana 7: Testes e Ajustes
+• Semana 8: Deploy e Treinamento
+
+SLIDE 11 - INVESTIMENTO E FORMA DE PAGAMENTO
+===========================================
+Título: INVESTIMENTO E FORMA DE PAGAMENTO
+
+Investimento:
+• [Valor total do projeto]
+
+Forma de Pagamento:
+• 30% na assinatura do contrato
+• 40% na entrega da primeira versão
+• 30% na entrega final
+
+Garantia:
+• 90 dias de suporte gratuito
+• Correções de bugs inclusas
+• Treinamento da equipe
+
+SLIDE 12 - CRONOGRAMA MACRO
+===========================
+Título: CRONOGRAMA MACRO
+
+[Adicione aqui um cronograma visual com as principais etapas]
+
+Exemplo:
+Mês 1: Análise e Planejamento
+Mês 2: Desenvolvimento
+Mês 3: Testes e Ajustes
+Mês 4: Deploy e Treinamento
+
+SLIDE 13 - PRÓXIMOS PASSOS
+==========================
+Título: PRÓXIMOS PASSOS
+
+1. Aprovação da proposta
+2. Assinatura do contrato
+3. Kickoff do projeto
+4. Início do desenvolvimento
+
+Contato:
+contatoagilepoint@gmail.com
+[Seu telefone]
+
+SLIDE 14 - OBRIGADO
+===================
+Título: OBRIGADO!
+
+Subtítulo: Vamos transformar seus desafios em realidade digital?
+
+Contato:
+contatoagilepoint@gmail.com
+[Seu telefone]
+
+Logo: Agile Point
